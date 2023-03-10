@@ -9,6 +9,7 @@
     gap: 5px;
     border-top: 2px solid black;
     margin: 10px;
+    padding-top: 10px;
 }
 header{
     text-align: center;
@@ -129,4 +130,3 @@ nav a:hover{
 }
 span button{width:20%;margin:5px;border-radius: 10px;}
 span button:hover{background-color: black;color:red;text-shadow: #3306ff 0 2px;}
-.container{padding-top: 10px;}
