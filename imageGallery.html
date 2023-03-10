@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+    <head>
+        <title></title>
+    </head>
+    <link rel="stylesheet" href="imageGallery.css">
+    <script src="imageGallery.js"></script>
+    <body>
+        <header>    
+            <h1>Grid and List View</h1>
+        </header>
+    <div class="nav-bar">
+        <span>
+            <button id="list" onclick="list()">list</button>
+            <button id="grid-btn" onclick="grid()">grid</button>
+        </span>
+    
+        <nav>
+            <input class="search" type="text" placeholder="search" onkeyup="search(this.value)">
+            <a href="home">Home</a>
+            <a href="home">Trending</a>
+            <a href="home">History</a>
+            <a href="home">About</a>
+        </nav>
+    </div>
+    <div id="details" class="details"></div>
+        <div id="container" class = "container">
+        </div>
+        <script>
+            render()
+        </script>
+        
+            
+        </div>
+    </body>
+</html>
