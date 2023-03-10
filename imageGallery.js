@@ -33,24 +33,24 @@ let render = () => {
     document.getElementById("container").innerHTML = data
 }
 let list = () =>{
-   for(let i=0; i<card.length; i++){
-        card[i].style.width = "100%"
-        card[i].style.display = "flex"
-        card[i].style.textAlign = "left"
+   for(let i of card){
+        i.style.width = "100%"
+        i.style.display = "flex"
+        i.style.textAlign = "left"
     }
-    for(let i=0; i<hide.length; i++){
-        hide[i].style.display = "block"
+    for(let i of hide){
+        i.style.display = "block"
     }
 
 }
 let grid = () =>{
-    for(let i=0; i<card.length; i++){
-        card[i].style.width = "20%"
-        card[i].style.display = "block"
-        card[i].style.textAlign = "center"
+    for(let i of card){
+        i.style.width = "20%"
+        i.style.display = "block"
+        i.style.textAlign = "center"
     }
-    for(let i=0; i<hide.length; i++){
-        hide[i].style.display = "none"
+    for(let i of hide){
+        i.style.display = "none"
     }
 }
 let view = (value) => {
@@ -71,7 +71,7 @@ let hider = () => {
 let search = (value) =>{
     let data = ""
     for(let i=0; i<arr.length; i++){
-        if(arr[i].name.toLowerCase().includes(value.toLowerCase()) || arr[i].date.toLowerCase().includes(value.toLowerCase()) || arr[i].cast.toLowerCase().includes(value.toLowerCase()) || arr[i].description.toLowerCase().includes(value.toLowerCase())){
+        if(arr[i].name.toLowerCase().includes(value.toLowerCase()) || arr[i].date.toLowerCase().includes(value.toLowerCase())){
             data+= `<div class="card" onclick="view(`+i+`)">
             <div class="movie-img"><img class="thumbnails" width="136" height="194" src="./images/`+arr[i].image+`" alt="Avengers: Endgame Movie Poster"></div>
             <div class="movie-text"><b class="movie-title">`+arr[i].name+`</b></span><br>
