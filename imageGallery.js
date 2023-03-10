@@ -33,23 +33,23 @@ let render = () => {
     document.getElementById("container").innerHTML = data
 }
 let list = () =>{
-   for(var i=0; i<card.length; i++){
+   for(let i=0; i<card.length; i++){
         card[i].style.width = "100%"
         card[i].style.display = "flex"
         card[i].style.textAlign = "left"
     }
-    for(var i=0; i<hide.length; i++){
+    for(let i=0; i<hide.length; i++){
         hide[i].style.display = "block"
     }
 
 }
 let grid = () =>{
-    for(var i=0; i<card.length; i++){
+    for(let i=0; i<card.length; i++){
         card[i].style.width = "20%"
         card[i].style.display = "block"
         card[i].style.textAlign = "center"
     }
-    for(var i=0; i<hide.length; i++){
+    for(let i=0; i<hide.length; i++){
         hide[i].style.display = "none"
     }
 }
