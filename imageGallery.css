@@ -9,12 +9,10 @@
     gap: 5px;
     border-top: 2px solid black;
     margin: 10px;
-    padding-top: 10px;
 }
 header{
     text-align: center;
     height:10%;
-    background-color: #4646464d;
     color: #eee;
     text-shadow: #f9f927 0 3px 2px; 
 }
@@ -36,6 +34,7 @@ body{
     color: #eee;
     padding: 10px; 
     display: block;
+    border-bottom: solid #000 5px;
     margin-top: 1%;
     text-align: center;
     /* transition: 10.5s ease; */
@@ -43,7 +42,6 @@ body{
 }
 .card:hover{
     border-bottom: solid red 5px;
-    box-shadow: 10px 10px 10px black;
     transform: scale(1.01);
 }
 .movie-text{
@@ -56,14 +54,13 @@ body{
     width: 100%;
 }
 nav{
-    background-color: #fcfafa92 ;
+    background-color: #ffffff76;
     padding-right: 7%;
     margin-top: 10px;
     float: right;
 }
 
 nav a{
-    background-color: #fcfafa92 ;
     font-weight: bold;
     margin: 5px;
     text-decoration: none;
@@ -71,8 +68,7 @@ nav a{
 }
 
 nav a:hover{
-    color:red;
-    text-shadow: #3306ff 0 2px;
+    text-shadow: #f9f927 0 2px;
 }
 
 .details{
@@ -101,8 +97,7 @@ nav a:hover{
     transition: 0.1s ease;
 }
 .movie-title:hover{
-    color:red;
-    text-shadow: #3306ff 0 5px;
+    text-shadow: #f9f927 0 2px;
 }
 .details-text{
     padding: 5px;
@@ -114,12 +109,10 @@ nav a:hover{
 .details-button{
     font-weight: bolder;
     float:left;
-    height: 7%;
-    width: 6%;
-    font-size: 12px;
+    font-size: 12px;    
     border: none;
 }
-
+.details button{}
 .details button:hover{
     color:#eee;
     background-color: #000;
@@ -129,4 +122,5 @@ nav a:hover{
     border: solid #000 2px;
 }
 span button{width:20%;margin:5px;border-radius: 10px;}
-span button:hover{background-color: black;color:red;text-shadow: #3306ff 0 2px;}
+span button:hover{background-color: black;color:#eee;}
+.container{padding-top: 10px;}
